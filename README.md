@@ -20,6 +20,5 @@ Find column names in all tables and views in db:
 
 ## Terminal
 
-[Warp terminal](https://www.warp.dev/)
-
+[Warp terminal](https://www.warp.dev/) <br>
 [Of My Zsh](https://ohmyz.sh/)
