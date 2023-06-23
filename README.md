@@ -19,5 +19,7 @@ Find column names in all tables and views in db:
 ```SELECT COLUMN_NAME AS 'ColumnName' ,TABLE_NAME AS 'TableName' FROM INFORMATION_SCHEMA.COLUMNS WHERE COLUMN_NAME LIKE '%MyName%' ORDER BY TableName ,ColumnName;```
 
 ## Terminal
+
 [Warp terminal](https://www.warp.dev/)
+
 [Of My Zsh](https://ohmyz.sh/)
