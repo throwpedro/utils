@@ -19,6 +19,7 @@ Find column names in all tables and views in db:
 ```SELECT COLUMN_NAME AS 'ColumnName' ,TABLE_NAME AS 'TableName' FROM INFORMATION_SCHEMA.COLUMNS WHERE COLUMN_NAME LIKE '%MyName%' ORDER BY TableName ,ColumnName;```
 
 ## NPM
+Run older npm versions on m1 silicon macs
 - Execute arch and confirm that at the moment it is returning arm64
 - Execute arch -x86_64 zsh
 - Execute arch and confirm that it is now returning i386
