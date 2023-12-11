@@ -18,6 +18,16 @@ Find column names in all tables and views in db:
 
 ```SELECT COLUMN_NAME AS 'ColumnName' ,TABLE_NAME AS 'TableName' FROM INFORMATION_SCHEMA.COLUMNS WHERE COLUMN_NAME LIKE '%MyName%' ORDER BY TableName ,ColumnName;```
 
+## Jest
+
+If jest is spycho slow:
+    ```globals: {
+        'ts-jest': {
+            isolatedModules: true
+        },
+    }```
+Make it run typescript only on the module under test instead of on EVERYTHING.
+
 ## NPM
 Run older npm versions on m1 silicon macs
 - Execute arch and confirm that at the moment it is returning arm64
