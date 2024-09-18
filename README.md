@@ -6,11 +6,20 @@ A collection of different useful tools, hacks and programs I use from time to ti
 
 delete local git branches:
 
-```alias deleteLocalBranches="git branch | grep -v "staging" | grep -v "master" | xargs git branch -D"```
+```alias deleteLocalBranches="git branch | grep -v "staging" | grep -v "master" | grep -v "main" | xargs git branch -D"```
 
-interactive git checkout:
+interactive git checkout branch:
 
 ```alias gci="git branch | fzf | xargs git checkout"```
+
+interactive git checkout commit:
+
+```alias gcohi="git log --oneline | fzf | awk '{print \$1}' | xargs git checkout"```
+
+interactive git bisect good:
+
+```alias bisectgood="git log --oneline | fzf | awk '{print \$1}' | xargs git bisect good"```
+
 
 ## mySql
 
